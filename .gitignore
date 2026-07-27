@@ -1,5 +1,12 @@
 node_modules
 dist
+client/node_modules
+client/dist
+server/node_modules
+server/dist
 .env
-.DS_Store
+client/.env
+server/.env
 *.log
+Thumbs.db
+.DS_Store
