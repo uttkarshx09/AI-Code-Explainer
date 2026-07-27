@@ -1,22 +1,24 @@
 # AI Code Explainer
 
-This workspace contains a full-stack AI code explainer.
+AI Code Explainer is a full-stack application that demonstrates how to build an AI-powered code explanation experience with React 19, Express.js, and an LLM-compatible backend.
 
-## What it includes
+## Overview
 
-- Express API with a `/api/explain` endpoint
-- Optional LLM integration through OpenAI-compatible chat completions
-- React 19 + Vite + Tailwind client
-- `useActionState`-driven form submission and result handling
+The project includes:
 
-## Local setup
+- An Express.js API with a `/api/explain` endpoint
+- Optional LLM integration using OpenAI-compatible chat completions
+- A modern React 19 client built with Vite and Tailwind CSS
+- `useActionState`-based form submission and response handling
+
+## Getting Started
 
 1. Start the backend from `server/` on port `3002`.
 2. Start the frontend from `client/` on port `3001`.
-3. Open the client in the browser at `http://localhost:3001` and paste any snippet.
+3. Open `http://localhost:3001` in your browser and paste in a code snippet to generate an explanation.
 
-## Environment
+## Environment Variables
 
-Set the backend environment variables from `server/.env.example`.
+Configure the backend using the variables defined in `server/.env.example`.
 
-If `OPENAI_API_KEY` is missing, the backend returns a deterministic demo explanation so the UI still works.
+If `OPENAI_API_KEY` is not set, the backend will return a deterministic demo explanation so the application remains fully usable during local development.
