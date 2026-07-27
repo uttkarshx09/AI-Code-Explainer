@@ -1,9 +1,11 @@
 {
   "name": "ai-code-explaiiner",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
