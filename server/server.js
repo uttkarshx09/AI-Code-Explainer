@@ -112,7 +112,7 @@ app.post("/api/explain", async (request, response, next) => {
         const completionResponse = await fetch(`${apiBaseUrl}/chat/completions`, {
             method: "POST",
             headers: {
-                Authorization: `Bearer ${apiKey}`,
+                Authorization: "Bearer " + apiKey,
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
